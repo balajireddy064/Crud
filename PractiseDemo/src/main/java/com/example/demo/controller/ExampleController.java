@@ -43,6 +43,7 @@ public class ExampleController {
 	
 	@DeleteMapping("/delete/{sno}")
 	public void delete(@PathVariable("sno") int sno) {
+		System.out.println("===in controller class");
 		service.delete(sno);
 	
 	}
